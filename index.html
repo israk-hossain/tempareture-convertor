@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Temperature Calculator</h1>
+        <label for="temperature">Enter Temperature:</label>
+        <input type="number" id="temperature" placeholder="Enter temperature" required>
+
+        <label for="unit">Select Unit:</label>
+        <select id="unit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button onclick="convertTemperature()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <button onclick="openFeedbackForm()" class="feedback-button">Give Feedback</button>
+    
+        <!-- Feedback Form Modal -->
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeFeedbackForm()">&times;</span>
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
